@@ -13,3 +13,4 @@ spec:
     targetPort: vote-port
   selector:
     app: vote
+

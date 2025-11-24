@@ -20,6 +20,11 @@ spec:
       # - image: eloip13009/redis-hc
       # - image: europe-west9-docker.pkg.dev/nuage-k8s/login-nuage-images/redis-hs
         name: redis-container
+        env:
+          - name: REDIS_PASSWORD
+            value: "password"
+          - name: REDIS_IP
+            value: "10.144.208.112"
         ports:
         - containerPort: 6379
           name: redis-port
