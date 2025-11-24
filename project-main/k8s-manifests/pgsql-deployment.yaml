@@ -4,7 +4,7 @@ metadata:
   labels:
     app: pgsql
   name: pgsql-deplt
-  namespace: xyz
+  namespace: j23milli
 spec:
   replicas: 1
   selector:
