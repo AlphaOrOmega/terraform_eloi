@@ -24,6 +24,6 @@ spec:
         env:
         - name: REDIS_PASSWORD
           value: "password"
-        - name: REDIS_IP
+        - name: REDIS_HOST
           value: "10.144.208.112"
         name: worker-container

@@ -38,18 +38,3 @@ resource "kubernetes_manifest" "vote-service" {
 resource "kubernetes_manifest" "worker-deployment" {
   manifest = yamldecode(file("${path.module}/k8s-manifests/worker-deployment.yaml"))
 }
-
-
-/*
-resource "kubernetes_manifest" "redis-deployment" {
-  manifest = yamldecode(file("${path.module}/k8s-manifests/redis-deployment.yaml"))
-}
-*/
-// remote_state
-resource "kubernetes_manifest" "redis-service" {
-  manifest = yamldecode(file("${path.module}/k8s-manifests/redis-service.yaml"))
-}
-
-resource "kubernetes_manifest" "redis-endpoints" {
-  manifest = yamldecode(file("${path.module}/k8s-manifests/redis-endpoints.yaml"))
-}
